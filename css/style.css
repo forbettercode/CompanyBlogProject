@@ -1,0 +1,207 @@
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header__top {
+    background: #303030;
+    height: 45px;
+}
+
+.header__btn {
+    float: right;
+}
+
+.header__phone,
+.header__email {
+    color: #d3d2d2;
+    letter-spacing: .25px;
+    line-height: 45px;
+    position: relative;
+}
+
+.header__phone {
+    padding-right: 34px;
+    padding-left: 21px;
+}
+
+.header__phone::before {
+    content: "\f095";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+
+.header__email {
+    padding-left: 24px;
+}
+
+.header__email::before {
+    content: "\f003";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+
+.header__btn {
+    color: #1b1b1b;
+    background: #ffc222;
+    font-size: 16px;
+    line-height: 36px;
+    padding: 5px 20px 4px 50px;
+    position: relative;
+}
+
+.header__btn::before {
+    content: "\f0b1";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 22px;
+    color: #1b1b1b;
+}
+
+.header__bottom {
+    padding: 34px 0 23px;
+}
+
+.header__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    color: #323232;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid transparent;
+    padding: 0 16px;
+    transition: all .4s ease-in-out;
+}
+
+.nav a:hover {
+    border-color: #ffc222;
+}
+
+.nav li+li {
+    padding-left: 10px;
+}
+
+#modal {
+    display: none;
+}
+
+
+/* SLIDER START */
+
+.slider {
+    background-image: url(../images/slider1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+}
+
+.slider__item-content {
+    text-align: center;
+    padding-top: 110px;
+    max-width: 665px;
+    margin: 0 auto;
+}
+
+.slider__title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.slider__text {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 24px;
+    color: #d3d2d2;
+    margin-bottom: 50px;
+}
+
+.default__btn {
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid #ffc222;
+    padding: 8px 30px 8px 24px;
+    border-right-width: 20px;
+    position: relative;
+}
+
+.default__btn::after {
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -12px;
+}
+
+.slider__inner {
+    position: relative;
+}
+
+.slick-btn {
+    position: absolute;
+    top: 70%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+    background: #ffc222;
+}
+
+.slick-btn.slick-disabled {
+    cursor: default;
+    background: transparent;
+}
+
+.slick-btn::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "icomoon";
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-next::before {
+    content: "\f105";
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-prev::before {
+    content: "\f104";
+}
+
+/* SLIDER END */
